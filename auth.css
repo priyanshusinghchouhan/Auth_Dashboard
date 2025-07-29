@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.authform {
+    background-color: #2d2d2d;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #404040;
+    margin: 0 auto;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .authform {
+        padding: 30px 20px;
+        max-width: 100%;
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .authform {
+        padding: 25px 15px;
+        margin: 10px;
+    }
+    
+    .authform h2 {
+        font-size: 20px;
+    }
+    
+    .authform h4 {
+        font-size: 14px;
+    }
+}
+
+.authform h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.authform h3 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #b0b0b0;
+    font-weight: normal;
+}
+
+.authform label {
+    display: block;
+    margin-bottom: 5px;
+    color: #e0e0e0;
+    font-weight: 500;
+}
+
+.authform input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    background-color: #3a3a3a;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.authform input::placeholder {
+    color: #999;
+}
+
+/* Mobile input adjustments */
+@media (max-width: 480px) {
+    .authform input {
+        padding: 14px 12px;
+        font-size: 16px; /* Prevents zoom on iOS */
+        margin-bottom: 15px;
+    }
+}
+
+.authform input:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 5px rgba(99, 102, 241, 0.3);
+}
+
+.authform button {
+    width: 100%;
+    padding: 12px;
+    background-color: #6366f1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.authform button:hover {
+    background-color: #4f46e5;
+    transform: translateY(-1px);
+}
+
+.authform button:active {
+    transform: translateY(0);
+}
+
+/* Mobile button adjustments */
+@media (max-width: 480px) {
+    .authform button {
+        padding: 14px 12px;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+}
+
+.authform p {
+    text-align: center;
+    color: #b0b0b0;
+    line-height: 1.5;
+}
+
+/* Mobile text adjustments */
+@media (max-width: 480px) {
+    .authform p {
+        font-size: 14px;
+    }
+}
+
+.authform span {
+    color: #6366f1;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.authform span:hover {
+    color: #4f46e5;
+}
+
+#errormessage{
+    color: red;
+    margin-bottom: 10px;
+    margin-left: 70px;
+}
