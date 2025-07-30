@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body>
+    <!-- Top Navbar -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <h2>📊 Dashboard</h2>
+        </div>
+        <div class="nav-right">
+            <div class="user-profile">
+                <input type="number" id="amount" placeholder="Enter amount in ₹" min="1" required />
+                <button id="rzp-button">Make Payment</button>
+                <img src="/new/02JS/DOM proj/02AuthDashboard/3208b68f18120aa63532f0ff1ecf90ac.jpg" alt="Profile" class="profile-img">
+                <span class="username" id="userName">John Doe</span>
+            </div>
+            <button class="logout-btn" id="logOut">Logout</button>
+        </div>
+    </nav>
+
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-menu">
+                <div class="menu-item active">
+                    <span class="icon">📊</span>
+                    <span class="text">Dashboard</span>
+                </div>
+                <div class="menu-item">
+                    <span class="icon">💰</span>
+                    <span class="text">Expenses</span>
+                </div>
+                <div class="menu-item">
+                    <span class="icon">📈</span>
+                    <span class="text">Analytics</span>
+                </div>
+                <div class="menu-item">
+                    <span class="icon">👤</span>
+                    <span class="text">Profile</span>
+                </div>
+                <div class="menu-item">
+                    <span class="icon">⚙️</span>
+                    <span class="text">Settings</span>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <div class="content-header">
+                <h1 id="welcome">Welcome back, John!👋 </h1>
+                <p>Here's what's happening with your finances today.</p>
+            </div>
+
+            <!-- Stats Cards -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">💰</div>
+                    <div class="stat-info">
+                        <h3>Total Expenses</h3>
+                        <p class="stat-value">₹12,450</p>
+                        <span class="stat-change negative">-₹340 from last month</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">💳</div>
+                    <div class="stat-info">
+                        <h3>Remaining Balance</h3>
+                        <p class="stat-value">₹7,550</p>
+                        <span class="stat-change positive">+₹1,200 from last month</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">📊</div>
+                    <div class="stat-info">
+                        <h3>Total Transactions</h3>
+                        <p class="stat-value">156</p>
+                        <span class="stat-change positive">+23 from last month</span>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-icon">👁️</div>
+                    <div class="stat-info">
+                        <h3>Profile Views</h3>
+                        <p class="stat-value">85</p>
+                        <span class="stat-change positive">+12 from last week</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Content Section -->
+            <div class="dashboard-section">
+                <h2>Recent Activity</h2>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <div class="activity-icon">🍕</div>
+                        <div class="activity-details">
+                            <h4>Food & Dining</h4>
+                            <p>Pizza Palace - ₹450</p>
+                        </div>
+                        <span class="activity-time">2 hours ago</span>
+                    </div>
+                    
+                    <div class="activity-item">
+                        <div class="activity-icon">⛽</div>
+                        <div class="activity-details">
+                            <h4>Transportation</h4>
+                            <p>Fuel Station - ₹2,100</p>
+                        </div>
+                        <span class="activity-time">1 day ago</span>
+                    </div>
+                    
+                    <div class="activity-item">
+                        <div class="activity-icon">🛒</div>
+                        <div class="activity-details">
+                            <h4>Shopping</h4>
+                            <p>Grocery Store - ₹1,250</p>
+                        </div>
+                        <span class="activity-time">2 days ago</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="dashboard.js"></script>
+</body>
+</html>
