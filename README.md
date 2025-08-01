@@ -1,7 +1,8 @@
 # 🔐 Auth + Dashboard Web App
 
 A simple and responsive authentication-based dashboard web application built with vanilla JavaScript. It includes a simulated login system and a protected dashboard with charts, expense tracking, and history features.
-Live at : https://priyanshusinghchouhan.github.io/Auth_Dashboard/
+
+##🌐Live at  : https://priyanshusinghchouhan.github.io/Auth_Dashboard/
 
 ---
 
