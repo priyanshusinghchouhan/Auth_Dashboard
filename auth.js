@@ -15,10 +15,6 @@ const fakeUsers = [
         name : "Inigo",
         email : "inigo@gmail.com",
         password : "555"
-    },{
-        name: "Himanshu",
-        email: "himanshu@gmail.com",
-        password : "123"
     }
 ];
 
